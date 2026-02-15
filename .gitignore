@@ -1,0 +1,138 @@
+# ============================================================================
+# SAMURAI TERMINAL - FRONTEND ONLY REPOSITORY
+# ============================================================================
+# This repository contains ONLY the public-facing landing page frontend.
+# All infrastructure, terminal backend, databases, and deployment config
+# are maintained locally and NOT pushed to GitHub.
+#
+# PUBLIC: Frontend code (app/, components/, styles, config)
+# PRIVATE: Terminal app, backend, infrastructure (see below)
+# ============================================================================
+
+# ============================================================================
+# PRIVATE: Terminal App Backend & Documentation (Local Only)
+# ============================================================================
+# The interactive terminal features require backend infrastructure (Python,
+# PostgreSQL, caching) that is NOT published to this open-source repo.
+# These are maintained locally for production use only.
+
+# Terminal documentation (local reference only)
+TERMINAL.md
+
+# Terminal app and backend code
+app/terminal/
+app/api/
+hooks/
+lib/
+
+# Backend scripts and utilities
+scripts/
+backend/
+.env/
+
+# ============================================================================
+# PRIVATE: Infrastructure & Deployment (Local Only)
+# ============================================================================
+# Infrastructure configuration is environment-specific and contains
+# sensitive values. All deployment files remain local only.
+
+# Docker configuration
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Nginx reverse proxy config
+nginx/
+
+# SSL/TLS certificates
+*.pem
+*.key
+*.crt
+
+# Database migrations and configs
+migrations/
+database/
+*.sql
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.*.production
+
+# ============================================================================
+# BUILD & DEPENDENCIES
+# ============================================================================
+
+# Node modules (regenerated via npm install)
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+build/
+dist/
+out/
+.vercel/
+
+# Package manager locks (regenerate locally)
+pnpm-lock.yaml
+yarn.lock
+
+# ============================================================================
+# LOGS & TEMP FILES
+# ============================================================================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+*.tmp
+*.temp
+
+# ============================================================================
+# IDE & OS
+# ============================================================================
+
+.vscode/
+.vscode-settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# DEVELOPMENT & TESTING
+# ============================================================================
+
+# Coverage and test reports
+coverage/
+.coverage
+*.lcov
+jest.config.js
+__tests__/
+
+# Hot module reload
+.next-dev/
+
+# Parcel/other bundler
+.cache/
+.parcel-cache/
+
+# ============================================================================
+# CACHE & TEMPORARY
+# ============================================================================
+
+.cache
+.turbo
+.swc
+dist
+.scannerwork/
