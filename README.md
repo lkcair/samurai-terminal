@@ -4,6 +4,8 @@ Frontend for institutional-grade financial dashboard.
 
 **Live**: https://samuraiterminal.com
 
+![Samurai Terminal Dashboard](screenshots/1.png)
+
 ---
 
 ## Overview
