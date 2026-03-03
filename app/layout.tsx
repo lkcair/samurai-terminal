@@ -4,11 +4,11 @@ import { AuthProvider } from '@/lib/authContext'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://samuraiterminal.com'),
-  title: 'Samurai Terminal - Free Financial Dashboard Alternative',
-  description: 'Institutional-grade market data, real-time SEC analysis, and AI-powered screener. The Best free financial terminal alternative.',
+  title: 'Samurai Terminal - The Best Financial Terminal Alternative',
+  description: 'Institutional-grade market data, real-time SEC analysis, and AI-powered screener. The Best financial terminal alternative.',
   keywords: [
     'Financial Terminal Alternative',
-    'Free Real-time Stock Dashboard',
+    'Real-time Stock Dashboard',
     'Crypto Terminal',
     'Professional Portfolio Tracker',
     'SEC Filings',
@@ -18,13 +18,19 @@ export const metadata: Metadata = {
   authors: [{ name: 'Samurai Financial Data Systems', url: 'https://samuraiterminal.com' }],
   creator: 'Samurai Financial Data Systems',
   openGraph: {
-    title: 'Samurai Terminal - Free Financial Dashboard Alternative',
+    title: 'Samurai Terminal - The Best Financial Terminal Alternative',
     description: 'Institutional-grade market data and AI-powered analysis',
     url: 'https://samuraiterminal.com',
     siteName: 'Samurai Terminal',
     locale: 'en_US',
     type: 'website',
     images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Samurai Terminal - The Best Financial Terminal Alternative',
+      },
       {
         url: '/og-image.svg',
         width: 1200,
@@ -35,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Samurai Terminal - Free Financial Dashboard Alternative',
+    title: 'Samurai Terminal - The Best Financial Terminal Alternative',
     description: 'Institutional-grade market data and AI-powered analysis',
-    images: ['/og-image.svg'],
+    images: ['/og-image.png', '/og-image.svg'],
   },
   robots: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
 }
