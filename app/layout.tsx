@@ -24,11 +24,20 @@ export const metadata: Metadata = {
     siteName: 'Samurai Terminal',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Samurai Terminal - The Best Financial Terminal Alternative',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Samurai Terminal - Free Financial Dashboard Alternative',
     description: 'Institutional-grade market data and AI-powered analysis',
+    images: ['/og-image.svg'],
   },
   robots: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
 }
