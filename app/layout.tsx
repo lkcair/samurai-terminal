@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { AuthProvider } from '@/lib/authContext'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://samuraiterminal.com'),
@@ -44,7 +45,11 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow" />
         <meta name="theme-color" content="#050505" />
       </head>
-      <body className="bg-st-bg text-white">{children}</body>
+      <body className="bg-st-bg text-white">
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </body>
     </html>
   )
 }

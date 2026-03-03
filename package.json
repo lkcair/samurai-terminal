@@ -10,13 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
     "date-fns": "^3.0.0",
     "framer-motion": "^10.18.0",
+    "joi": "^17.11.0",
     "lucide-react": "^0.447.0",
     "next": "^14.2.0",
     "pg": "^8.18.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "redis": "^4.6.0"
   },
   "devDependencies": {
     "@types/node": "^20.18.0",

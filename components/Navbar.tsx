@@ -87,10 +87,10 @@ export default function Navbar() {
             >
               Pricing
             </a>
-            <Link href="/terminal" className="btn-secondary block text-center w-full">
+            <Link href="/terminal" className="btn-secondary block text-center w-full" onClick={() => setIsOpen(false)}>
               Open Terminal (Free)
             </Link>
-            <Link href="/pricing" className="btn-primary block text-center w-full">
+            <Link href="/pricing" className="btn-primary block text-center w-full" onClick={() => setIsOpen(false)}>
               Contact Sales
             </Link>
           </div>

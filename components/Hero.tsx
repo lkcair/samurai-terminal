@@ -3,13 +3,24 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { TrendingUp, Zap, Shield } from 'lucide-react'
 import LoginModal from './auth/LoginModal'
+import { useAuth } from '@/lib/authContext'
 
 export default function Hero() {
   const router = useRouter()
+  const { isAuthenticated, isLoading } = useAuth()
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
+
+  // If already authenticated, redirect to terminal
+  useEffect(() => {
+    if (!isLoading && isAuthenticated && isLoginModalOpen) {
+      router.push('/terminal')
+      setIsLoginModalOpen(false)
+    }
+  }, [isAuthenticated, isLoading, isLoginModalOpen, router])
 
   return (
     <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-st-bg">
@@ -46,10 +57,13 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/terminal" className="btn-secondary text-lg px-8 py-4 inline-block">
-                Start Free
+              <Link href="/terminal" className="btn-secondary text-lg px-8 py-4 inline-block text-center">
+                Sign In
               </Link>
-              <Link href="/pricing" className="btn-primary text-lg px-8 py-4 inline-block">
+              <Link href="/terminal" className="btn-secondary text-lg px-8 py-4 inline-block text-center">
+                Terminal (Free)
+              </Link>
+              <Link href="#pricing" className="btn-primary text-lg px-8 py-4 inline-block">
                 Contact Sales
               </Link>
             </div>

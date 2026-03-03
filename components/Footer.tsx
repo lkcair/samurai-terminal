@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               */}
               <li>
-                <a href="mailto:support@samuraiterminal.com" className="text-gray-400 hover:text-st-blue transition-colors">
+                <a href="/pricing" className="text-gray-400 hover:text-st-blue transition-colors">
                   Email
                 </a>
               </li>
@@ -139,7 +139,7 @@ export default function Footer() {
               </li>
               */}
               <li>
-                <a href="mailto:support@samuraiterminal.com" className="text-gray-400 hover:text-st-blue transition-colors">
+                <a href="/pricing" className="text-gray-400 hover:text-st-blue transition-colors">
                   Email
                 </a>
               </li>
@@ -152,12 +152,12 @@ export default function Footer() {
           <p>
             © 2026 Samurai Financial Data Systems. Powered by{' '}
             <a
-              href="https://github.com/marialuizafalci"
+              href="https://lucas0.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-st-blue hover:underline"
             >
-              lkcair
+              lucas0 AI
             </a>
             .
           </p>
