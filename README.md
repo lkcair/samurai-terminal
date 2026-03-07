@@ -1,8 +1,12 @@
-# Samurai Terminal
+# Samurai Terminal Frontend Showcase
 
-Frontend for institutional-grade financial dashboard.
+Institutional-grade, Bloomberg-like Terminal for real-time market data, analytics, and trading workflows - customizable panels, low-latency charts, and secure integrations for research.
 
-**Live**: https://samuraiterminal.com
+## Live at Samurai Platform:
+
+For the complete Lucas0 platform with backend services, API integration, and AI capabilities, visit:
+
+**https://samuraiterminal.com**
 
 ![Samurai Terminal Dashboard](screenshots/1.png)
 
