@@ -64,4 +64,7 @@ Output: `.next/` directory
 
 ---
 
+⚠️ DISCLAIMER: This software is for educational and research purposes only. Trading and investing involves substantial risk of loss. Use at your own risk.
+
+
 **© 2026 Samurai Financial Data Systems**
